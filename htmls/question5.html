@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> the semi-possible quiz </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="../logic.js"> </script>
+            <link rel="stylesheet" href="../style.css">
+        </head>
+
+        <body>
+            <div class="gameUI1"> 
+                <h1 class="question"> Q5. Get ready </h1>
+                <div class="buttonDIV">
+                    <button id="startButton" class="buttonELEM" onClick=
+                    "qn5Display();
+
+                    //Tier 1 bots
+                    qn5Bot('bot1', 2);
+                    qn5Bot('bot2', 2);
+                    qn5Bot('bot3', 2);
+                    qn5Bot('botA', 2);
+                    qn5Bot('botB', 2);
+                    
+                    //Tier 2 bots
+                    qn5Bot('bot4', 2.5);
+                    qn5Bot('bot5', 2.5);
+                    qn5Bot('botC', 2.5);
+                    qn5Bot('botD', 2.5);
+                    qn5Bot('botE', 2.5);
+
+                    //Tier 3 bots
+                    qn5Bot('bot6', 3);
+                    qn5Bot('bot7', 3);
+                    qn5Bot('botF', 3);
+
+                    "> Start </button>
+                </div>
+
+                <div style="height: 10vh;"></div>
+                
+                <div class="imageDIV" id="map" >
+                    <div id="bot1" onmouseover="fail()"></div>
+                    <div id="bot2" onmouseover="fail()"></div>
+                    <div id="bot3" onmouseover="fail()"></div>
+                    <div id="bot4" onmouseover="fail()"></div>
+                    <div id="bot5" onmouseover="fail()"></div>
+                    <div id="bot6" onmouseover="fail()"></div>
+                    <div id="bot7" onmouseover="fail()"></div>
+                    <div id="botA" onmouseover="fail()"></div>
+                    <div id="botB" onmouseover="fail()"></div>
+                    <div id="botC" onmouseover="fail()"></div>
+                    <div id="botD" onmouseover="fail()"></div>
+                    <div id="botE" onmouseover="fail()"></div>
+                    <div id="botF" onmouseover="fail()"></div>
+
+
+                    <img src="../images/maze.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area onmouseover="fail()"
+                        coords="251,10,251,247,285,247,285,46,1265,45,1266,245,1298,245,
+                        1298,236,1388,236,1388,331,1301,333,1298,320,1271,321,1269,519,
+                        285,519,285,326,251,323,250,554,1602,556,1602,10" shape="poly">
+
+                        <area onmouseover="direct('congrats.html')" coords="1300,237,1388,331" shape="rect">
+                    </map>
+    
+
+                </div>
+            
+            </div>
+        </body>
+
+    </html>
+
