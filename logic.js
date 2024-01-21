@@ -137,6 +137,11 @@ qn5Display = () => {
     document.getElementById("startButton").style.display = "none";
 }
 
+resetQ5 = () => {
+    document.getElementById("map").style.display = "none";
+    document.getElementById("startButton").style.display = "block";
+}
+
 qn5Bot = (botID, speed) => {
     let time = null;
     let flag = null;
