@@ -1,5 +1,13 @@
+/*
+if (window.location.pathname != "failure.html") {
+    currentLocation = window.location.pathname;
+}
+*/
+
+
 direct = (pageName) => {
     window.location.assign(pageName);
+    sessionStorage.setItem("currentLocation", window.location.pathname)
 }
 
 fail = () => {
@@ -137,9 +145,10 @@ qn5Display = () => {
     document.getElementById("startButton").style.display = "none";
 }
 
-resetQ5 = () => {
-    document.getElementById("map").style.display = "none";
-    document.getElementById("startButton").style.display = "block";
+
+retry = () => {
+    let retryQn = sessionStorage.getItem("currentLocation")
+    direct(retryQn);
 }
 
 qn5Bot = (botID, speed) => {
