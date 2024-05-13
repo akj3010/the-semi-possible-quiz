@@ -48,19 +48,19 @@ displayRank = () => {
     const failCount = sessionStorage.getItem("fails");
 
     if (failCount == 0) {
-        image.src = "images/goodRank.gif";
+        image.src = "../images/goodRank.gif";
     }
 
     else if (failCount <= 5 && failCount != null) {
-        image.src = "images/notBadRank.gif";
+        image.src = "../images/notBadRank.gif";
     }
 
     else if (failCount > 5) {
-        image.src = "images/badRank.gif";
+        image.src = "../images/badRank.gif";
     }
 
     else  {
-        image.src = "images/errorRank.png";
+        image.src = "../images/errorRank.png";
     }
 
 }
